@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1> JS </h1>
+      <p>JS praco</p>
+    </header>
+
+    <section class="event-handling card">
+      <h2> Event Handling</h2>
+      <button id="clickBtn">Click Me</button>
+      <div id="hoverBox">Hover Here</div>
+      <input type="text" id="keyInput" placeholder="Type something..." />
+      <p id="secretAction">Double click me for a surprise!</p>
+    </section>
+
+    <div><button id="colorChangeBtn">Random Color</button></div>
+
+    <section class="interactive-elements card">
+      <h2>Interactive Elements</h2>
+
+      
+
+      <div class="tabs">
+        <button class="tabBtn active" data-tab="1">Tab 1</button>
+        <button class="tabBtn" data-tab="2">Tab 2</button>
+      </div>
+      <div class="tabContent" id="tab1">Welcome to Tab 1</div>
+      <div class="tabContent hidden" id="tab2">This is Tab 2 content</div>
+
+      <div class="gallery">
+        <img id="galleryImg" src="https://picsum.photos/300/200?random=1" alt="Gallery Image" />
+        <button id="nextImg">Next Image</button>
+      </div>
+    </section>
+
+    <section class="form-section card">
+      <h2> Form Validation</h2>
+      <form id="signupForm">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit">Sign Up</button>
+        <div id="formFeedback"></div>
+      </form>
+    </section>
+  </div>
+
+
+  <!-- Trigger Button -->
+<button id="showModalBtn">Show Message</button>
+
+<!-- Modal -->
+<div id="customModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <p>This is your popup message! 🎉</p>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
